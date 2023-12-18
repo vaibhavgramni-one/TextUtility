@@ -1,5 +1,75 @@
+body {
+  background-color: grey;
+  color : white;
+  user-select: none;
+  
+}
+*{
+  overflow: auto;
+}
+
 .App {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  box-sizing: border-box ;
+}
+
+.text-util {
+  width: max-content;
+  padding : 1em 1.5em;
+  background-color: #282c34;
+  border-radius: 0.5em; 
   text-align: center;
+  box-shadow: 5px 8px 15px lightgrey;
+}
+
+input
+{
+  padding : 0.8em;
+  border-radius: 0.5em;
+  margin: 2em 0;
+}
+
+span {
+  font-size: larger;
+}
+
+button {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 1em;
+  margin: 0.5em auto;
+  width: 60%;
+  border-radius: 0.5em;
+  cursor: pointer;
+  /* border : 2px inset; */
+  box-shadow: inset 2px 5px 10px lightgrey;
+  text-transform: uppercase;
+}
+
+#heading {
+  margin: 0 auto;
+  /* padding: 0.25em 1em; */
+  color: transparent;
+  width: max-content;
+  background : linear-gradient(180deg , white , grey , white , grey);
+  -webkit-background-clip: text;
+}
+
+input {
+  font-size: 1.25rem;
+}
+
+button:hover {
+ /* filter: blur(2px); */
+  width: 64% ;
+  background-color: #c9c9c9;
+  color : #000000;
+  box-shadow: inset 2px 5px 10px #282c34;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .App-logo {
